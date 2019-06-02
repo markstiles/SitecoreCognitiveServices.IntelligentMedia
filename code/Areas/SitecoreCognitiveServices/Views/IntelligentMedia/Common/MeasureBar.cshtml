@@ -1,0 +1,5 @@
+﻿@model float
+
+<span class="bar-box" title="@((Model*100).ToString("0"))%">
+    <div class="bar-value bar-@Model.ToString("0.0").Replace(".", "")"></div>
+</span>

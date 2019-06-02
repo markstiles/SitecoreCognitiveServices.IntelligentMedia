@@ -1,0 +1,25 @@
+﻿---
+ID: "97148849-e69d-46c6-adf8-0aefd12d39c6"
+Parent: "a15986e0-f90e-48f3-8636-763ae5f7cbe0"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/Options Label
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/document_text.png
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: ImageDescription.OptionsLabel
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Options
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180202T205420Z

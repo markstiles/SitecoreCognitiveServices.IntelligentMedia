@@ -1,0 +1,23 @@
+﻿---
+ID: "e523048d-37e5-4eb8-aba5-e39f146d573b"
+Parent: "af92064f-c6b7-43e4-b10c-c0eb02bebab5"
+Template: "af92064f-c6b7-43e4-b10c-c0eb02bebab5"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Face List Folder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{DB80E76F-05E4-4319-9DEF-71732AE9CDC2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180614T154115Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

@@ -1,0 +1,27 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model string
+
+@{
+    ViewBag.Title = Translator.Text("TrainAllGroups.Title");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+        <form class="form train-all-groups-form" method="post" 
+              action="/SitecoreCognitiveServices/IntelligentMedia/TrainGroupStatus">
+            <fieldset>
+                @Html.Partial("_ContextFields")
+                <input type="hidden" name="groupIds" id="groupIds" value="@Model" />
+            </fieldset>
+        </form>
+        @Html.Partial("_ProgressIndicator")
+        <div class="result-display"></div>
+        <div class="result-message"></div>
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.TrainAllGroups.js"></script>

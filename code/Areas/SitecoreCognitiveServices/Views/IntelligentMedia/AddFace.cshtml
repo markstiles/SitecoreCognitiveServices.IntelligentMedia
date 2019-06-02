@@ -1,0 +1,57 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model Dictionary<string, Dictionary<string, Guid>>
+
+@{
+    ViewBag.Title = Translator.Text("AddFace.Title");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+    <form class="form add-face-form" method="post"
+          action="/SitecoreCognitiveServices/IntelligentMedia/AddFaceSubmit">
+        <div class="form-row">
+            <p>@Translator.Text("AddFace.Description")</p>
+        </div>
+        <div class="result-success">
+            @Translator.Text("AddFace.SuccessMessage")
+        </div>
+        <div class="result-failure">
+            @Translator.Text("AddFace.FailureMessage")
+        </div>
+        <div class="form-row field-title">
+            @Translator.Text("AddFace.PeopleLabel")
+        </div>
+        <fieldset class="form-fields form-scrollable">
+            <div class="form-row">
+                @{ var counter = 1; }
+                @foreach (var group in Model)
+                {
+                    <div class="group-name">@group.Key</div>
+                    foreach (var person in group.Value)
+                    {
+                        var attr = (counter == 1) ? "checked=checked" : "";
+                        counter++;
+                        <div>
+                            <input type="radio" id="personOption-@person.Key" name="personOption" value="@person.Value" @attr />
+                            <label for="personOption-@person.Key">@person.Key</label>
+                        </div>
+                    }
+                }
+            </div>
+            <div>
+                @Html.Partial("_ContextFields")
+            </div>
+        </fieldset>
+        <div class="scWizardButtons">
+            <button class="form-submit scButton scButtonPrimary">@Translator.Text("AddFace.SubmitButton")</button>
+        </div>
+        @Html.Partial("_ProgressIndicator")
+    </form>
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.AddFace.js"></script>

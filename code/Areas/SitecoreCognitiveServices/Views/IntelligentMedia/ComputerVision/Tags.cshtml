@@ -1,0 +1,18 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.ComputerVision.Tag[]
+
+@if (Model != null)
+{
+    <div class="detail-box detail-tags">
+        <h3>@Translator.Text("Vision.Tags.TagsHeading")</h3>
+        <div class="detail-row">
+            @foreach (var t in Model)
+            {
+                <div class="tag-set">
+                    <label>@t.Name: </label>
+                    @Html.Partial("Common/MeasureBar", (float)t.Confidence)
+                </div>
+            }
+        </div>
+    </div>
+}

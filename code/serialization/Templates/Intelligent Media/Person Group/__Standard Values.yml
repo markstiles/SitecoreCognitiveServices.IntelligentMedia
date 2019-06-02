@@ -1,0 +1,26 @@
+﻿---
+ID: "f1cd439d-db3f-4bfa-bd90-b6d5f697b459"
+Parent: "5d15ab5d-31af-4f18-94d9-62afad15d6ea"
+Template: "5d15ab5d-31af-4f18-94d9-62afad15d6ea"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{072056F4-088D-46AA-84C2-7F0DBE6B61F6}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T205348Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "85caea77-884b-40c9-acb4-5e7ba150442d"
+      Hint: Name
+      Value: $name

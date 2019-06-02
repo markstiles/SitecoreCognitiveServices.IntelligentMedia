@@ -1,0 +1,220 @@
+﻿@using System.Globalization
+@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@using Sitecore.Data.Managers
+@model SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCognitiveServices.Models.IImageSearch
+
+@{
+    ViewBag.Title = Translator.Text("SearchForm.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/jquery-ui-1.12.1.min.css">
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/prism.css">
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.css">
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    <div class="rte-search-form">
+        <form class="form image-search-form" method="post" action="/SitecoreCognitiveServices/IntelligentMedia/RTESearchQuery">
+            <div class="message-store">
+                <div class="select-an-image">@Translator.Text("SearchForm.SelectMessage")</div>
+            </div>
+            <div class="result-filters">
+                <div class="filter-wrap">
+
+                    <div class="filter-section">
+                        <div class="color-items">
+                            <div class="color-title">@Translator.Text("SearchForm.ChooseColorLabel")<span class="color-count"></span></div>
+                            <div class="color-list">
+                                @for (int i = 0; i < Model.Colors.Count; i++)
+                                {
+                                    <div class="color-item" value="@Model.Colors[i].Value">
+                                        <div class="color-inner" style="background-color: @Model.Colors[i].Value;" title="@Model.Colors[i].Key"></div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <div class="emotion-items">
+
+                            <div class="emotion-item">
+                                <div class="filter">
+                                    <select id="gender">
+                                        <option value="0">@Translator.Text("SearchForm.Gender.ChooseLabel")</option>
+                                        <option value="2">@Translator.Text("SearchForm.Gender.MaleFemale")</option>
+                                        <option value="3">@Translator.Text("SearchForm.Gender.Male")</option>
+                                        <option value="4">@Translator.Text("SearchForm.Gender.Female")</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <div class="filter">
+                                    <select id="glasses">
+                                        <option value="-1">@Translator.Text("SearchForm.Glasses.ChooseLabel")</option>
+                                        <option value="0">@Translator.Text("SearchForm.Glasses.NoGlasses")</option>
+                                        <option value="2">@Translator.Text("SearchForm.Glasses.ReadingGlasses")</option>
+                                        <option value="1">@Translator.Text("SearchForm.Glasses.Sunglasses")</option>
+                                        <option value="3">@Translator.Text("SearchForm.Glasses.SwimmingGoggles")</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.AgeLabel"): </span>
+                                <span class="filter-value" data-field="age"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+                            
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.WidthLabel"): </span>
+                                <span class="filter-value" data-field="width"> </span>
+                                <div class="slider-range-size"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.HeightLabel"): </span>
+                                <span class="filter-value" data-field="height"> </span>
+                                <div class="slider-range-size"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.AngerLabel"): </span>
+                                <span class="filter-value" data-field="anger"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.ContemptLabel"): </span>
+                                <span class="filter-value" data-field="contempt"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.DisgustLabel"): </span>
+                                <span class="filter-value" data-field="disgust"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.FearLabel"): </span>
+                                <span class="filter-value" data-field="fear"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.HappinessLabel"): </span>
+                                <span class="filter-value" data-field="happiness"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.NeutralLabel"): </span>
+                                <span class="filter-value" data-field="neutral"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.SadnessLabel"): </span>
+                                <span class="filter-value" data-field="sadness"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.SurpriseLabel"): </span>
+                                <span class="filter-value" data-field="surprise"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <div class="emotion-items">
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.AdultLabel"): </span>
+                                <span class="filter-value" data-field="adult"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+
+                            <div class="emotion-item">
+                                <span class="filter-title">@Translator.Text("SearchForm.RacyLabel"): </span>
+                                <span class="filter-value" data-field="racy"> </span>
+                                <div class="slider-range"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-results">
+                <div class="result-column">
+                    <fieldset class="tag-filter">
+                        <div class="form-row">
+                            <div style="display:none;">
+                                <input class="rte-search-input" type="text" />
+                                <input type="hidden" id="database" name="database" value="@Model.Database" />
+                                <input type="hidden" id="language" name="language" value="@Model.Language" />
+                                <input type="hidden" id="fieldSourceId" name="fieldSourceId" value="@Model.FieldSourceId"/>
+                            </div>
+                            <div class="filter">
+                                <select data-placeholder=" "
+                                        style="width: 200px;"
+                                        multiple=""
+                                        class="chosen-select"
+                                        tabindex="-1">
+                                    <option value=""></option>
+                                    @{
+                                        foreach (var tag in Model.Tags)
+                                        {
+                                            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+
+                                            var tagName = textInfo.ToTitleCase(tag.Key); 
+
+                                            <option value="@tag.Key">@string.Format("{0} ({1})", tagName, tag.Value)</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="result-label">
+                        <span class="result-count"></span> @Translator.Text("SearchForm.ResultsLabel")
+                    </div>
+
+                    <div class="result-nav">
+                        <span class="result-nav-prev">
+                            @Html.Raw(ThemeManager.GetImage("Office/32x32/navigate_left.png", 16, 16))
+                        </span>
+                        <span class="result-nav-next">
+                            @Html.Raw(ThemeManager.GetImage("Office/32x32/navigate_right.png", 16, 16))
+                        </span>
+                        <span class="pager">
+                            @Translator.Text("SearchForm.PageLabel") <span class="pagenum"></span> of <span class="pagecount"></span>
+                        </span>
+                    </div>
+
+                    <div class="result-items"></div>
+                </div>
+            </div>
+            <div class="scWizardButtons">
+                <button class="search-submit scButton">@Translator.Text("SearchForm.SearchButtonText")</button>
+                <button class="scButton scButtonPrimary cognitiveSearchButton">@Translator.Text("SearchForm.SearchButtonText")</button>
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("SearchForm.InsertImageButtonText")</button>
+                <button class="form-reset scButton scButtonPrimary">@Translator.Text("SearchForm.ResetButton")</button>
+                <button class="form-cancel scButton">@Translator.Text("SearchForm.CancelButtonText")</button>
+            </div>
+        </form>
+        @Html.Partial("_ProgressIndicator")
+    </div>
+
+    <script src="/sitecore/shell/Controls/Lib/Prototype/prototype.js" type="text/javascript"></script>   
+    <script src="/Areas/SitecoreCognitiveServices/Assets/js/color-classifier.min.js"></script>
+    <script src="/Areas/SitecoreCognitiveServices/Assets/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.jquery.min.js"></script>
+    <script src="/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.proto.js"></script>
+    <script src="/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/prism.js"></script>
+    <script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.SearchForm.js"></script>
+</div>

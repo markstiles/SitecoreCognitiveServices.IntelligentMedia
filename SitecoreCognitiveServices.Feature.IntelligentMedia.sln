@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreCognitiveServices.Feature.IntelligentMedia", "code\SitecoreCognitiveServices.Feature.IntelligentMedia.csproj", "{6A342926-D5B0-460A-9CD1-BFC7B0E2CECF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitecoreCognitiveServices.Feature.IntelligentMedia.Tests", "tests\SitecoreCognitiveServices.Feature.IntelligentMedia.Tests.csproj", "{41946C72-01AE-49BD-9FD5-BEC56FF25924}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A342926-D5B0-460A-9CD1-BFC7B0E2CECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A342926-D5B0-460A-9CD1-BFC7B0E2CECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A342926-D5B0-460A-9CD1-BFC7B0E2CECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A342926-D5B0-460A-9CD1-BFC7B0E2CECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41946C72-01AE-49BD-9FD5-BEC56FF25924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41946C72-01AE-49BD-9FD5-BEC56FF25924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41946C72-01AE-49BD-9FD5-BEC56FF25924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41946C72-01AE-49BD-9FD5-BEC56FF25924}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CEE4501-BA49-4BB4-B724-F1EE399EBDBD}
+	EndGlobalSection
+EndGlobal

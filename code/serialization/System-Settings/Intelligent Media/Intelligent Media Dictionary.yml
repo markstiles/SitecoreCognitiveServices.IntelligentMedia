@@ -1,0 +1,24 @@
+﻿---
+ID: "20909c47-ff8c-4ba1-8618-2a44afbcfb11"
+Parent: "8de01e53-9b77-456e-ac39-e5a4104da38c"
+Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/book2.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {25672703-93BD-4056-88A4-9C20EC501967}
+    {46377307-DD97-43DC-AD21-5A32DAB844D6}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180202T200138Z

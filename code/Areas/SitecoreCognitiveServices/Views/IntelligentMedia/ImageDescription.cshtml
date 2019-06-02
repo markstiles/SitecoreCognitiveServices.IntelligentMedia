@@ -1,0 +1,45 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCognitiveServices.Models.Utility.IImageDescription
+
+@{
+    ViewBag.Title = Translator.Text("ImageDescription.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+        <form class="form" method="post" action="/SitecoreCognitiveServices/IntelligentMedia/UpdateImageDescription">
+            <fieldset>
+                <legend>@Translator.Text("ImageDescription.CurrentDescriptionLabel")</legend>
+                <div class="info-row">@(string.IsNullOrEmpty(Model.AltDescription) ? Translator.Text("ImageDescription.AltEmptyMessage") : Model.AltDescription)</div>
+            </fieldset>
+            <fieldset>
+                <legend>@Translator.Text("ImageDescription.OptionsLabel")</legend>
+                <div class="form-row">
+                    @foreach (var cp in Model.Descriptions)
+                    {
+                        <div>
+                            <input type="radio" id="descriptionOption" name="descriptionOption" value="@cp" />
+                            <label for="descriptionOption">@cp</label>
+                        </div>
+                    }
+                </div>
+                <div>
+                    @Html.Partial("_ContextFields")
+                </div>
+            </fieldset>
+            <div class="scWizardButtons">
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("ImageDescription.ButtonText")</button>
+            </div>
+        </form>
+    }
+    else
+    {
+        <fieldset>
+            <div class="info-row">@Translator.Text("ImageDescription.NoDescriptionMessage")</div>
+        </fieldset>
+    }
+</div>

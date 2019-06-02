@@ -1,0 +1,88 @@
+﻿@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.Face.FaceLandmarks
+
+@if (Model != null)
+{
+<div>
+    <div class="landmark" style="top: @{@Model.EyebrowLeftInner.Y}px;left:@{@Model.EyebrowLeftInner.X}px">
+        @*<label>Eyebrow Left Inner: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowLeftOuter.Y}px;left:@{@Model.EyebrowLeftOuter.X}px">
+        @*<label>Eyebrow Left Outer: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowRightInner.Y}px;left:@{@Model.EyebrowRightInner.X}px">
+        @*<label>Eyebrow Right Inner: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowRightOuter.Y}px;left:@{@Model.EyebrowRightOuter.X}px">
+        @*<label>Eyebrow Right Outer: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyeLeftBottom.Y}px;left:@{@Model.EyeLeftBottom.X}px">
+        @*<label>Eye Left Bottom: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyeLeftInner.Y}px;left:@{@Model.EyeLeftInner.X}px">
+        @*<label>Eye Left Inner: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyeLeftOuter.Y}px;left:@{@Model.EyeLeftOuter.X}px">
+        @*<label>Eye Left Outer: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowLeftInner.Y}px;left:@{@Model.EyeLeftTop.X}px">
+        @*<label>Eye Left Top: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyeRightBottom.Y}px;left:@{@Model.EyeRightBottom.X}px">
+        @*<label>Eye Right Bottom: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyeRightInner.Y}px;left:@{@Model.EyeRightInner.X}px">
+        @*<label>Eye Right Inner: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowLeftInner.Y}px;left:@{@Model.EyeRightOuter.X}px">
+        @*<label>Eye Right Outer: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyeRightTop.Y}px;left:@{@Model.EyeRightTop.X}px">
+        @*<label>Eye Right Top: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.MouthLeft.Y}px;left:@{@Model.MouthLeft.X}px">
+        @*<label>Mouth Left: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.MouthRight.Y}px;left:@{@Model.MouthRight.X}px">
+        @*<label>Mouth Right: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowLeftInner.Y}px;left:@{@Model.NoseLeftAlarOutTip.X}px">
+        @*<label>Nose Left Alar Out Tip: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.NoseLeftAlarTop.Y}px;left:@{@Model.NoseLeftAlarTop.X}px">
+        @*<label>Nose Left Alar Top: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.NoseRightAlarOutTip.Y}px;left:@{@Model.NoseRightAlarOutTip.X}px">
+        @*<label>Nose Right Alar Out Tip: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.EyebrowLeftInner.Y}px;left:@{@Model.EyebrowLeftInner.X}px">
+        @*<label>Nose Right Alar Top: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.NoseRootLeft.Y}px;left:@{@Model.NoseRootLeft.X}px">
+        @*<label>Nose Root Left: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.NoseRootRight.Y}px;left:@{@Model.NoseRootRight.X}px">
+        @*<label>Nose Root Right: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.NoseTip.Y}px;left:@{@Model.NoseTip.X}px">
+        @*<label>Nose Tip: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.PupilLeft.Y}px;left:@{@Model.PupilLeft.X}px">
+        @*<label>Pupil Left: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.PupilRight.Y}px;left:@{@Model.PupilRight.X}px">
+        @*<label>Pupil Right: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.UnderLipBottom.Y}px;left:@{@Model.UnderLipBottom.X}px">
+        @*<label>Under Lip Bottom: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.UnderLipTop.Y}px;left:@{@Model.UnderLipTop.X}px">
+        @*<label>Under Lip Top: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.UpperLipBottom.Y}px;left:@{@Model.UpperLipBottom.X}px">
+        @*<label>Upper Lip Bottom: </label>*@
+    </div>
+    <div class="landmark" style="top: @{@Model.UpperLipTop.Y}px;left:@{@Model.UpperLipTop.X}px">
+        @*<label>Upper Lip Top: </label>*@
+    </div>
+</div>
+}

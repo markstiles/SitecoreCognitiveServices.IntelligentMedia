@@ -1,0 +1,38 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@using Sitecore.Data.Managers
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.ComputerVision.Adult
+
+@if (Model != null)
+{
+    <div class="detail-box detail-adult">
+        <h3>@Translator.Text("Vision.Adult.AdultHeading")</h3>
+        <div class="detail-row">
+            <label>@Translator.Text("Vision.Adult.AdultLabel"): </label>
+            @Html.Partial("Common/MeasureBar", (float)Model.AdultScore)
+            <span class="tf-icon">
+                @if (Model.IsAdultContent)
+                {
+                    @Html.Raw(ThemeManager.GetImage("Apps/16x16/Right.png", 16, 16))
+                }
+                else
+                {
+                    @Html.Raw(ThemeManager.GetImage("Apps/16x16/Wrong.png", 16, 16))
+                }
+            </span>
+        </div>
+        <div class="detail-row">
+            <label>@Translator.Text("Vision.Adult.RacyLabel"): </label>
+            @Html.Partial("Common/MeasureBar", (float)Model.RacyScore)
+            <span class="tf-icon">
+                @if (Model.IsRacyContent)
+                {
+                    @Html.Raw(ThemeManager.GetImage("Apps/16x16/Right.png", 16, 16))
+                }
+                else
+                {
+                    @Html.Raw(ThemeManager.GetImage("Apps/16x16/Wrong.png", 16, 16))
+                }
+            </span>
+        </div>
+    </div>
+}

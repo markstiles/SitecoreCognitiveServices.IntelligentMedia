@@ -1,0 +1,29 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.ComputerVision.Description
+
+@if (Model != null)
+{
+    <div class="detail-box detail-description">
+        <h3>@Translator.Text("Vision.Description.DescriptionHeading")</h3>
+        <div class="detail-row">
+            <h4>@Translator.Text("Vision.Description.CaptionsHeading")</h4>
+            <div>
+                @foreach (var cp in Model.Captions)
+                {
+                    <div>
+                        <label>@cp.Text: </label>
+                        @Html.Partial("Common/MeasureBar", (float)cp.Confidence)
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="detail-row">
+            <h4>@Translator.Text("Vision.Description.TagsHeading")</h4>
+            <div class="tag-list">
+                <span>
+                    @Html.Raw(string.Join("</span>, <span>", Model.Tags))
+                </span>
+            </div>
+        </div>
+    </div>
+}

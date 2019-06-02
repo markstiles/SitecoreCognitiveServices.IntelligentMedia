@@ -1,0 +1,41 @@
+﻿@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.ComputerVision.Region[]
+
+@if (Model != null)
+{
+    <div class="region-block">
+        @foreach (var r in Model)
+        {
+            <div>
+                @if (r.BoundingBox != null)
+                {
+                    <div>
+                        @*<div>
+                            <label>Bounding Box: </label>
+                            <span>@r.BoundingBox</span>
+                        </div>
+                        @Html.Partial("ComputerVision/Rectangle", r.Rectangle)*@
+                    </div>
+                }
+                @if (r.Lines != null)
+                {
+                    <div>
+                        @foreach (var l in r.Lines)
+                        {
+                            <div>
+                                @*<div>
+                                        <label>Bounding Box: </label>
+                                        <span>@l.BoundingBox</span>
+                                    </div>
+                                    @Html.Partial("ComputerVision/Rectangle", l.Rectangle)*@<div>
+                                    <label></label>
+                                    <span></span>
+                                </div>
+                                @Html.Partial("ComputerVision/Words", l.Words)
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}

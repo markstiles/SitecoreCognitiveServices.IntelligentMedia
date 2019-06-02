@@ -1,0 +1,21 @@
+﻿---
+ID: "8de01e53-9b77-456e-ac39-e5a4104da38c"
+Parent: "00e3de41-11a3-4295-9767-9dd3dc832c02"
+Template: "715d655a-5f9d-41ad-b4d0-6b1a79a51eb9"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171108T215723Z
+    - ID: "99b4cb00-a21a-43cb-a6fb-c17c11567f82"
+      Hint: Analyze New Images
+      Type: Checkbox
+      Value: 1
+    - ID: "af436ae1-5fd0-47e2-938d-3e3085ab815d"
+      Hint: Tag And Description Confidence Threshold
+      Value: 0.5

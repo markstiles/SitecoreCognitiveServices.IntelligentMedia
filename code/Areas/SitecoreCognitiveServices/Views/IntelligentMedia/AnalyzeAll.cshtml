@@ -1,0 +1,41 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+
+@{
+    ViewBag.Title = Translator.Text("AnalyzeAll.Title");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    <form class="form analyze-all-form" method="post" action="/SitecoreCognitiveServices/IntelligentMedia/AnalyzeAll" status="/SitecoreCognitiveServices/IntelligentMedia/GetJobStatus">
+        <fieldset>
+            <div class="form-row">
+                @Translator.Text("AnalyzeAll.Description")
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="form-row">
+                <input class="overwrite-value" type="checkbox" id="overwrite" name="overwrite" />
+                <label for="overwrite">
+                    @Translator.Text("AnalyzeAll.Overwrite")
+                </label>
+            </div>
+            <div>
+                @Html.Partial("_ContextFields")
+            </div>
+        </fieldset>
+        <div class="scWizardButtons">
+            <button class="form-submit scButton scButtonPrimary">@Translator.Text("AnalyzeAll.ButtonText")</button>
+        </div>
+    </form>
+    @Html.Partial("_ProgressIndicator")
+    <div class="result-waiting">
+        @Translator.Text("AnalyzeAll.WaitingMessage")
+    </div>
+    <div class="result-display">
+        @Html.Raw(Translator.Text("AnalyzeAll.ResultMessage").Replace("{0}", "<span class=\"result-count\"></span>"))
+    </div>
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.AnalyzeAll.js"></script>

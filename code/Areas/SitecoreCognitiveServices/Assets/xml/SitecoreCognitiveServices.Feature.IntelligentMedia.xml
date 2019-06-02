@@ -1,0 +1,512 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>SitecoreCognitiveServices.Feature.IntelligentMedia</PackageName>
+      <Author>Mark Stiles</Author>
+      <Version>8-1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/SitecoreCognitiveServices/SitecoreCognitiveServices.Feature.IntelligentMedia.config</x-item>
+        <x-item>/App_Config/Include/SitecoreCognitiveServices/SitecoreCognitiveServices.Feature.IntelligentMedia.Coveo.config.disabled</x-item>
+        <x-item>/App_Config/Include/SitecoreCognitiveServices/SitecoreCognitiveServices.Feature.IntelligentMedia.Lucene.config.disabled</x-item>
+        <x-item>/App_Config/Include/SitecoreCognitiveServices/SitecoreCognitiveServices.Feature.IntelligentMedia.Solr.config.disabled</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>config files</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/css/chosen-sprite.png</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/css/chosen-sprite@2x.png</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/css/chosen.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/css/jquery-ui-1.12.1.min.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/bower.json</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen-sprite.png</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen-sprite@2x.png</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.jquery.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.jquery.min.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.min.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.proto.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/chosen.proto.min.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/chosen.png</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/event.simulate.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/oss-credit.png</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/prism.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/prism.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/docsupport/style.css</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/index.html</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/index.proto.html</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/options.html</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/Chosen/package.json</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/color-classifier.min.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/jquery-ui-1.12.1.min.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.AddFace.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.AnalyzeAll.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.IdentifyAllGroups.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.IdentifyGroup.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.ImageAnalysis.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.ImageDescriptionThreshold.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.SearchForm.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.Setup.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.SmartCrop.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.TrainAllGroups.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.TrainGroup.js</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/AddFace.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/AnalyzeAll.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Common/MeasureBar.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Common/Rectangle.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Adult.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Categories.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Color.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Description.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/FaceRectangle.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Faces.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/People.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Rectangle.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Regions.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Tags.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ComputerVision/Words.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Face/Attributes.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Face/Landmarks.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Face/Rectangle.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Face/Scores.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/IdentifyAllGroups.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/IdentifyGroup.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ImageAnalysis.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ImageDescription.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/ImageDescriptionThreshold.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/SearchForm.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/Setup.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/SmartCrop.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/TrainAllGroups.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/TrainGroup.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/web.config</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/_ContextFields.cshtml</x-item>
+        <x-item>/Areas/SitecoreCognitiveServices/Views/IntelligentMedia/_ProgressIndicator.cshtml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>area files</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Polly.dll</x-item>
+        <x-item>/bin/SitecoreCognitiveServices.Feature.IntelligentMedia.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>bin files</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/sitecore/shell/Controls/Rich Text Editor/RichText Commands.js</x-item>
+        <x-item>/sitecore/shell/Themes/Standard/Default/Content Manager.css</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>sitecore files</Name>
+    </xfiles>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Editors/Sitecore Cognitive Services/Intelligent Media/{9B084A61-EC71-4095-AF42-725C49A8135B}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Editors/Sitecore Cognitive Services/Intelligent Media/Setup/{5FF670F0-0170-480A-90F9-7EE75FB8A834}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Analysis/{447BB51F-5B3F-49F0-9516-53670091AC0B}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Analysis/Analyze All Descendants/{8F3F9F34-BB4D-4D83-88B1-01E4839ED812}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Analysis/Analyze/{E6F580AA-BD66-4B8A-B889-880A69C5A929}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Analysis/Reanalyze/{45CEE63E-C484-4120-AAFA-6CFF9F8AD98C}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Analysis/View Analysis/{06F3E7A2-3760-4D2F-8DB2-204BFACA681D}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/{823E8312-AB77-4B9B-948C-ECA50408AE2D}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/Add Face/{D857779C-AC46-4A94-A3C2-BF89BA1CC661}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/Identify All Groups/{08410FB2-BA6E-4F24-8F8D-4B3B663C25B7}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/Identify Group/{0F9BA845-3215-4A25-B8E1-BF1D4A3F9B47}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/Identify People/{2777AB59-93E6-4B54-BF47-2E506E8F7A44}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/Train All Groups/{0A227595-25B0-4F43-8F85-8496534E5AB9}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/People/Train Group/{EEC53F0B-9056-4824-910D-37C8D6FD33AE}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Utility/{E0160B8F-1E4B-48A6-8094-60FC97131623}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Utility/Set Alt Tag/{22A4C53A-26F6-44AA-9B04-AD9DDFD492A3}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Utility/Set Alt Tags On All Descendants/{85F4AB58-F1BB-4092-B96B-01C4ADBD2CEC}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Utility/Smart Crop/{E878ACDB-B231-4325-88BB-BA2E83D31807}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Strips/Cognitive/Analysis/{BB7CB173-2878-4A38-878A-CDDB32B7683D}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Strips/Cognitive/People/{31A5BB21-D41C-4C34-AF84-5C81B60712A5}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Strips/Cognitive/Utility/{AAA42737-0B47-4E74-971F-91229394C679}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>ribbon items</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/{AC590D86-9F8B-4CF9-831D-B489CAFDF982}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/{0BDB82F4-32B9-404B-B514-56A158E5F142}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Browse/{01B0E16B-7B2D-4665-AB7B-00DD654EB120}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Clear/{3C3DAB6C-D150-45AB-9456-11A0F5184588}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Edit Image/{4E3CC2FD-8165-4084-8E64-CE809CA3E5C1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Open Media Library/{511F2B2D-1F69-4742-B45D-F738A3B4BFA9}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Original Browse/{57DE829D-B348-4552-9B27-3BDAB59B621D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Properties/{1D0BA8D1-F8A0-4830-96A6-71AC11D3708A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/Refresh/{611FE1E7-F554-430A-A920-78F1F197CCFF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/Menu/View Analysis/{2C497799-D07F-421F-BAD7-D4A1FB5B3222}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/WebEdit Buttons/{B1EFA69E-8653-4E51-991C-E4ECF24EA30B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/WebEdit Buttons/Choose Image/{FA132569-83CE-407F-A93A-8F941688CB03}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/WebEdit Buttons/Clear Image/{0331AFF6-4420-4157-8945-1B21AABDC5D5}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/WebEdit Buttons/Image Properties/{2E010F04-13AD-4DFB-80B6-B6411A05431A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/WebEdit Buttons/Original Choose Image/{3353F539-7C59-4DB2-9A80-3EDAD427FDFF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Field types/Sitecore Cognitive Services/Intelligent Image/WebEdit Buttons/View Analysis/{2E838BD6-BDAD-47A8-8F72-8B4A8F4290BB}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>field items</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/Rich Text Default/Toolbar 1/Insert Image with Cognitive Search/{9EB9704A-40D1-45EE-8419-B4FF3B8C9CDD}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/Rich Text Full/Toolbar 1/Insert Image with Cognitive Search/{9C074209-5D61-4F07-AEE0-40D0D83715AC}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>rte items</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face Entity/{CD007434-BE34-47C3-8788-CB241960623D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face Entity/Entity/{81CD99C0-84C8-4DAC-994F-CF496C67B7D5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face Entity/Entity/Id/{D28F77D5-8312-4B53-A541-A25F28B59DAD}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face Entity/Entity/Name/{85CAEA77-884B-40C9-ACB4-5E7BA150442D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face Entity/Entity/User Data/{FC497129-C1A5-486A-AC69-C1C9D74A2709}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face/{FAF7DA1E-B6C3-4A1A-95E1-63F89B3B8F63}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face/Face/{FB6F75BE-90F2-4156-BDE0-F64F4E058186}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face/Face/Image/{D2F7987D-0689-4634-B6CE-2EEB2B1EC68B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/_Base Face/Face/Persisted Face Id/{F140C437-13C4-4AC9-A340-B45CFB7F9C91}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/{31FC1C9A-AA42-4710-B6E3-AB6028E867AD}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Face List Folder/__Standard Values/{E523048D-37E5-4EB8-ABA5-E39F146D573B}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Face List Folder/{AF92064F-C6B7-43E4-B10C-C0EB02BEBAB5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Face List/__Standard Values/{2C487C52-D988-44FB-AB10-6C56372DA79D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Face List/{DB80E76F-05E4-4319-9DEF-71732AE9CDC2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis Folder/__Standard Values/{C54B8DD9-69A8-41AA-9505-070ACCC9E4CE}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis Folder/{70130296-969D-44B3-B370-BCA46924D2B5}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/__Standard Values/{77E59988-E198-47DD-BD60-04EE8E9EFC8D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/{84379FC9-E395-470F-9D6B-EA4A2654AE86}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/Data/{9D8B0BA2-1455-4BFD-B469-627BCD2B371E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/Data/Analyzed Image/{39F1E0D0-78C7-4789-92E5-38F7CD1EE5FF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/Data/Facial Analysis/{31302037-4E73-4FF0-BB5C-70EFB6C8A22C}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/Data/People/{384668A3-F06E-46F6-BB85-4D3860FA7A57}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/Data/Textual Analysis/{BE68E325-972E-4E49-B2B7-6A0DAEC07714}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Image Analysis/Data/Visual Analysis/{6CD3C4A7-4066-4E9F-AC54-77235545165E}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/__Standard Values/{07D335F9-3C05-41F2-934B-C5FC8866F98A}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/{715D655A-5F9D-41AD-B4D0-6B1A79A51EB9}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/Image Search Settings/{404D62D3-378D-4076-9D41-058960DD1548}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/Image Search Settings/Analyze New Images/{99B4CB00-A21A-43CB-A6FB-C17C11567F82}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/Image Search Settings/Tag And Description Confidence Threshold/{AF436AE1-5FD0-47E2-938D-3E3085AB815D}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/Image Search Settings/Use Image Name as Tag/{4217ADF5-DDA1-4B06-86C7-B955F4088966}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/List Face/{1460EBA1-F5C8-402E-8CCA-C66AB55BC9AF}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/People Folder/__Standard Values/{23FFC388-D652-4CD7-9010-50C39EF8BAE7}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/People Folder/{4A5DFD9F-EC4D-47CC-B8C6-BAC6A8A1E597}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Face/{6BA87E07-74A4-4698-BFA6-B1FD613AAB31}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/__Standard Values/{F1CD439D-DB3F-4BFA-BD90-B6D5F697B459}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/{5D15AB5D-31AF-4F18-94D9-62AFAD15D6EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/Training Status/{EC4A8B12-11BD-4F7D-810F-3B5F17E4B122}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/Training Status/Created Date/{1C24602E-83C3-4048-B0CA-ABADAF57B420}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/Training Status/Last Action Date/{4FCFAC2E-514D-4F9C-92F7-999EE813C5C4}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/Training Status/Message/{A322CB04-428A-4D58-96A0-EED6954BC960}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person Group/Training Status/Status/{43A81F5C-F6D6-4165-98B5-E7156374AE43}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person/__Standard Values/{1FBD13A9-0B7D-467C-9B93-BCED6F203AAA}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Person/{072056F4-088D-46AA-84C2-7F0DBE6B61F6}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>template items</Name>
+    </xitems>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/{8DE01E53-9B77-456E-AC39-E5A4104DA38C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Image Analysis/{DCA68A11-8670-4B60-B752-F95CBBC14E97}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/{20909C47-FF8C-4BA1-8618-2A44AFBCFB11}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/{89ACF55C-EA9F-4266-9C5F-9714A10EE74E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/Description/{26093898-D5C3-4323-8760-EC5A41DFDEB4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/Failure Message/{BE37C7A9-CC4C-44AC-B230-DABBF7A43BEE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/People Label/{19896285-7907-4ED6-B531-62AD4DEB37F8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/Submit Button/{1ED1FE85-A1CE-468E-B11D-EFC1B87CBE59}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/Success Message/{9F3FC45A-2455-472F-B5E7-7B1B0F035A19}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Add Face/Title/{D4F2087E-4D19-494D-A59A-905BEA7DE7B5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/{85AB676F-A872-40C5-B4EB-F73A8CBE130E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/Button Text/{C37D566C-895D-4798-B17A-338E11B65245}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/Description/{CFBC643E-0C47-483A-89F3-027656B01C43}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/Overwrite/{59CF8CAB-03E1-4831-8153-A4C326B2C52E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/Result Message/{80AA0ED7-B210-4ED9-A105-454D2ADB5D62}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/View Title/{E2C17095-0C9B-4871-B529-BD56A09E9A55}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Analyze All/Waiting Message/{927E61ED-EB41-45A9-AA3B-C594B05E959A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/{742E44AD-F1DE-489F-880B-89F644E75960}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/{22DA7FA1-EC61-4D9C-87CC-30B177CB1121}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Age Label/{2357879C-B3EC-4B03-9DA7-16BFFD30B4D7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Beard Label/{196BC4C1-EC2D-4535-9D89-E2625F2C4AC6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Facial Hair Heading/{9599C4CB-58A0-4F3B-83CA-3D9AE7C7AD89}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Gender Label/{BA2D21EF-4222-45B0-9D98-C675C39C2916}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Glasses Label/{218CEB7C-3134-487B-B36A-E8428B6B6D99}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Head Pose Heading/{2726AC23-4139-488A-99E3-C895B6887912}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Moustache Label/{C3B7A40C-172C-411C-B9D2-9B71C47906DB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Pitch Label/{ED7331EB-79B6-4438-8CC5-B232000F6736}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Roll Label/{AF6771F6-3376-451C-B192-AAAEF5139222}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Sideburns Label/{E1CDAD84-BF6C-4E61-8B3F-F435DFA99B1D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Smile Label/{AA08A77F-67FE-4CB8-B1B8-05E44E856947}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Attributes/Yaw Label/{2D5999BD-BA82-4E76-AB51-0F52195DF8B7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/{2963AE12-7552-4702-8EB3-5D66D7A8A6FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Anger Label/{CF0A47F4-1A66-4FD8-82E2-9078A6935C6F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Contempt Label/{F0A6405D-1AAA-4440-90D8-E3A14828A5B4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Disgust Label/{FDA147F0-0349-4EA6-851C-BC777488B473}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Fear Label/{C042FABF-463E-4237-AC7E-B6F6A2232ADE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Happiness Label/{ECEDEAA2-476D-4C2C-8EB6-2D6261CCA710}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Neutral Label/{55A2FC90-A958-4554-A94C-BA7A0AC289E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Sadness Label/{A24038ED-116C-432B-8340-4A179358663D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Face/Scores/Surprise Label/{3C5AA0AC-E40F-4EE0-911D-B2330977222C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify All Groups/{EC98DB2F-53F4-4085-839E-D913BEC3A710}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify All Groups/Result Message/{AB6BC138-1CD7-48BD-943B-ED6E60AB737E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify All Groups/Title/{3C2FA121-44BF-4BF8-8060-F122A1FAE646}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify All Groups/Waiting Message/{A6BC0DA4-B97A-4750-96B6-77A12F624A21}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify Group/{F27CC5B0-A766-4A46-9F59-F05BA6B01F5E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify Group/Result Message/{51E4D819-507A-41B9-B561-D627787B6111}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify Group/Title/{9D9F2C90-C57A-4CC5-B2CC-F25920D8D93C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Identify Group/Waiting Message/{D2A45BEC-FAB9-4AE7-BBE1-2D229C676F2C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/{247D9FFB-57A1-4B38-ADCC-39B19BCAB673}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Angle Label/{BD7CA3DF-9CFF-4B5E-874A-9AC31A51CD1A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Button Text/{94EEA982-6AF8-4746-9117-8BBFACC6E9A0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Emotional Analysis Label/{E8307EE2-C9F0-44C4-BB92-30F795B9C7C4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Facial Analysis Label/{994B5496-3089-45F5-B87E-6A4F35CA455A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Language Label/{55E0D266-4038-43E3-9794-2AC63AC76904}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Orientation Label/{82E0868A-0C82-4E93-9EC8-423A859DC9CE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Text Heading/{86B4E4B2-F6D8-423A-B834-F53BFB905381}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Textual Analysis Label/{8E6ED557-7A82-44DF-9328-6B04BA2BB8E4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/View Title/{C116420C-F360-44F7-B7EB-167076F029E2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Visual Analysis  Label/{C99D3B2F-DD49-4E1E-9C67-9CB2CE49D464}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Analysis/Warning/{4863066C-30B6-4F98-9FFA-2BABAF43B6CC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/{FAA66AC7-6ED8-4155-956E-14153ADE5F70}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/Button Text/{F7748EBC-8FFF-4760-ADBD-7A8B15342C46}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/Confidence Label/{545C530D-94E7-4B00-B7AD-0782E520798F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/Overwrite Label/{3E356D06-E0B5-4321-9938-C04EA1888F74}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/Result Message/{E0E95920-A893-4D8C-BC82-E4B2660EBFE3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/Update Alt Description/{1F5FF9A9-9E63-4656-8348-8C60903BB33C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/Update Alt Label/{C6D8620E-543F-4E71-BC5F-8A7AEBFFBAB0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description Threshold/View Title/{B6FA8B2D-38B7-420A-B192-1BFF7C8D289F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/{A15986E0-F90E-48F3-8636-763AE5F7CBE0}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/Alt Empty Message/{8BA1792E-A531-44B9-8CBD-BAFFEFCC57A8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/Button Text/{739D967C-825D-447B-A7B2-91C7EC544B01}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/Current Description Label/{1F241870-8833-4FB7-9D42-91136AC0E023}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/No Description Message/{EBA3D2E7-4701-4C51-BA2D-FB610C6FA5C3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/Options Label/{97148849-E69D-46C6-ADF8-0AEFD12D39C6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Image Description/View Title/{B882743D-67E7-4DF4-B628-63563C31FA6A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/{0E5379D6-B8D2-4D60-BCCF-362B8E76B06E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/{84BF88EB-FE03-4C9B-B8B4-D7DB9FCF3793}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Add/{D35186EF-30B6-4457-8BF7-EB69C78CB464}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Add/Add Failure/{AE39CE57-A821-4E2E-843E-1BF9354BAE40}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Add/Add Success/{1CA7E070-48FC-4446-931A-9EE5DC443A12}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Add/Button Text/{475F63FF-2CEF-4454-929D-8DABC36E7876}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Add/Description/{8478E66B-13AE-427A-AB6C-AE4D39392795}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Add/Tab/{DBB7174E-911B-4B24-AC78-450EDFA6B5ED}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Description/{148C2C08-BD0E-4175-A4AD-947444191FBB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/{F0728689-6683-488F-A550-A8AEBEAE1447}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Delete Button Text/{B7D19D5C-FCF7-4A4C-A41F-CADE47737AF8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Delete Failure/{DC5A228C-1F30-457C-A12D-919921ACBF05}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Delete Success/{DB97E418-909D-4AAD-A612-698CA68B41A9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Description/{FEC3A240-68A3-4C81-94C4-6C209EEAF87E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Edit Button Text/{E9A5410C-242A-41DB-9D1F-45BEE08FB036}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Edit Failure/{6901BBAE-6943-4758-B72C-C1079795DCCE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Edit Success/{D9E50FF9-D6EA-41FB-957C-2E01D8EDDD6A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Group/{D6AEF2C6-3156-471B-9B91-75FFB188537B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Edit/Tab/{CF0DDBA5-7BF8-4196-B7C2-D4AE7E7E1166}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Groups/Name/{59D15516-444B-46E5-AF04-390DC4AC9D5B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/{00896EEB-FB28-4CE6-8807-9309A951664C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Add/{1593E8AF-E54C-44C3-B470-0C8C1E40991E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Add/Add Failure/{66765127-0609-4F67-A272-8387AC6B4C0A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Add/Add Success/{F2930694-8B2B-40EE-A42C-983DC24C29FF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Add/ButtonText/{12004A63-0007-4770-BD92-6375060EEDA5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Add/Description/{8F0C7E9D-5C76-4545-9403-6AF3E88DD292}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Add/Tab/{7A19FD99-B60D-407B-B615-F21E860B2EEF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/{E7B67A9E-8CDF-46AB-850D-8EE20A587F5C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Delete Button Text/{6B170E41-E452-40DD-9C1F-2BB3D6366923}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Delete Failure/{827C105D-2308-4635-B64D-C95AB7F03C03}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Delete Success/{992CE5D1-7B58-4049-82F2-9EA0B030C174}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Description/{4F9F2651-B7A8-4EE6-911E-69B9B72E6E81}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Edit Button Text/{340FBD4D-205D-4A94-A97D-587AD4A3BC4D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Edit Failure/{33665B6F-C83D-4558-A1CA-694C3D1CA5C7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Edit Success/{D0C1B664-3D92-4AA2-9E3A-94E5F40EA473}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Person/{7DBA59F1-DA24-4697-A06D-6E11EFF83D5F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Person/Edit/Tab/{DAC2EC33-F24B-48DD-B8B6-289C752E2C88}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Person Groups/Title/{B00A08D8-3762-4474-894F-FBCEB91FFE7C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/{D3E239B8-511D-4430-AFEE-E6E56830191E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Adult Label/{21EC46D3-EBAA-496D-B74E-51A5A2D68EBC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Age Label/{148A434F-6F13-4C12-80CC-590DFF60366E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Anger Label/{C50BF1F7-07DE-4A1E-AE12-0F745C3F051A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Cancel Button Text/{FDD92A01-F07B-4483-A364-679CEBF06465}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Choose Color Label/{5C3AA7C8-C68E-4F62-9939-0F182613F9E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Contempt Label/{7F66BDDF-7B79-45B2-A81A-1889FCD6B9CC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Disgust Label/{0B5793E5-19D2-45C9-952B-6D5627D22D64}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Fear Label/{D7DB25AF-5429-4947-B74C-AC437AB7872F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Gender/{A0B257F6-187C-46CA-91F2-1326DA9FF946}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Gender/Choose Label/{77D553B3-5383-41AB-9F69-729EAD479164}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Gender/Female/{26A133BC-47B8-4D01-91AD-399A397450D2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Gender/Male and Female/{17B6F38B-E7AF-4D22-8DF5-6FCFD70F52A9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Gender/Male/{8DD83E7D-ECF5-4338-905F-13EAEA9073AB}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Gender/None/{78D80948-C944-421F-A711-40897CEB4101}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Glasses/{EDDA8041-EE35-45C2-BBBC-23B811C598F2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Glasses/Choose Label/{08662490-76CD-406C-A303-2F5BA640F564}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Glasses/No Glasses/{54F3BE53-B46F-44B0-94EE-5C19B6179420}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Glasses/Reading Glasses/{21650BF1-6B38-4586-825C-89CC49FEC820}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Glasses/Sunglasses/{964A6CE2-F53D-4F6B-A95F-2241F8F0EBFC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Glasses/Swimming Goggles/{3D453152-F6A7-4063-A6E8-32328C07C9DE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Happiness Label/{C47959CD-8996-4191-8EF6-48A84344C209}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Height Label/{87FB3F02-1CE2-4757-AAD8-939C610DE824}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Insert Image Button Text/{B9CB2510-29E5-40BD-8EF6-A77F40C4EF56}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Modal Title/{137ECAD3-075A-49AE-BDCB-56264F3E15FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Neutral Label/{115D8AED-F2EF-4F28-8EF5-97C9B3648A08}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Page Label/{CE38A830-A5EC-47C0-B80D-8F0AC0F2B8E8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Racy Label/{35013F82-48A4-4147-8310-E56C8919EE76}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Results Label/{EC8CE994-6E9D-4101-88AF-5D447EA14D48}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Sadness/{63462C3C-98A6-46ED-88E8-8D247718D4B4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Search Button Text/{6B06F2DC-F3A7-4908-AE10-53ADA40DE3ED}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Select Message/{1105186B-AE61-4C17-B1FC-F66BD2B9E076}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Surprise/{01129037-3425-403B-88F2-A17192649EE8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/View Title/{B16C4E2B-3E1B-430A-AFD3-890DBD60B9B6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Search Form/Width Label/{3556AA62-E19B-4567-B1D5-EF542A38356E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/{A6CB8E6B-B29A-4816-A14B-5DBC0B3C2B7B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Azure Link/{594B937B-2B2B-46C8-BE14-6AAB24A5E5FD}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Button Text/{7BB27302-6A48-485B-A029-4EE323615B92}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Computer Vision Api Endpoint Label/{174929D1-D92E-4BC4-AE6C-1B7F8555BF4B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Computer Vision Api Label/{C1E877A3-686F-48BB-87C0-4773C6D6D0D6}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Description/{4658E177-91F4-4F98-967E-9E43DE054B5E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Face Api Endpoint Label/{156B2A44-1C11-4526-BDAC-CB0F6C6D8BFE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Face Api Label/{3B49A982-9C6B-47DD-9FFA-FBC7414C7779}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Failure Message/{CD5924BC-F877-43B2-ABC3-8EBC9EFF88A1}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Form Heading/{44AF7284-D4D3-43BD-B5F1-FF2D29F7DDFE}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Index Type Label/{CA1523BB-BBD6-4CB3-A6B7-EB611FA8852C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Reindex Button Text/{7FD5B616-1329-4873-9822-63CE18AFBF6E}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/Success Message/{BD9F0667-14C2-4FEF-80B0-1B746D691EA5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Setup/View Title/{DA8F2370-CAE0-4728-9B10-80E6D61E44BC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/{E0B43B2E-8D5F-44F1-A0C8-1EA910FE7AB3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Back Button/{BAC1D925-831A-44BE-A608-8ECEEF68971C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Crop Button/{49D6C0A0-2097-477D-AA48-B9E902475965}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Description/{2226510E-47CA-4BE3-B7C3-615F5E4CF4EA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Failure Crop Message/{5C6F271A-F714-4CB7-8F56-CBE4D07760E3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Failure Save Message/{D2165110-141B-4F1F-A441-160A699462D8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Height/{0B466A70-C80A-4C53-9EF3-0D96329297E5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Preserve Aspect Ratio/{7E6A2CB9-89AD-4572-8B43-EA06262C260C}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Save Button/{E06E4387-8C68-4385-8AB3-6DB0723FA55B}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Success Message/{21DA90F5-AA8C-40C8-B10A-AC7E9D1A3ACF}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Title/{E6BC8D64-F566-44EF-A41C-7E377F7FDCF5}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Smart Crop/Width/{96564326-56A9-41EC-B7C2-DF863FE855E9}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Train All Groups/{A5511A77-F62C-40B3-BC51-73331EE69C03}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Train All Groups/Title/{02A6A551-B1D9-4ECC-A0DD-4CAB612B7AF7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Train Group/{469EFF84-8535-4141-8F74-B23865628FD7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Train Group/Title/{57C4AF7C-BC5F-448A-8065-06D201265927}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/{80D3BE85-2B24-4100-8679-CCEBF2C9D296}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Adult/{FA97862C-FF84-4377-8296-E0A576E49B59}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Adult/Adult Heading/{2E17EF5D-4FA1-4F39-9000-4B31B76CC5FC}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Adult/Adult Label/{FC61887B-A370-438D-87C3-E2528E4D447F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Adult/Racy Label/{D1758E41-50E3-475E-BDFF-953FFA0C9048}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Categories/{7745FA4B-EC6C-4392-94BA-987ED93C137F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Categories/Categories Heading/{4E36AC0B-1B30-4DBF-9BC7-4AEE105F8C8A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/{3AD5C137-143D-47FA-83BB-E58083C0F3B2}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/Accent Label/{ED8CFBDE-E201-4042-8576-0D94856E85E8}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/Background Label/{67B9FEBF-4774-49AE-B37E-F7FAE682F32D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/Colors Heading/{677CCC61-338E-481E-B69B-8588FDC0598D}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/Dominant Label/{FEC95879-57F8-4E72-8D5B-4721893B0073}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/Foreground Label/{44D3CF4A-3267-400F-9EE2-F38A621BBD52}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Color/Is Black White Image Label/{1076CB03-AEF9-4A28-B8E6-BFB92EB421D3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Description/{EEE264C3-D1E7-4533-8B3E-F22ACC1AC459}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Description/Captions Heading/{C6FB692B-14B8-4E9A-B3EB-73FB546ADCD7}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Description/Description Heading/{0589765F-DBF2-4812-B9C8-2BFCBF87B075}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Description/Tags Heading/{A66A6745-FD15-452C-8564-1F055944A4BA}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Faces/{5D27BA90-0C04-43E7-9E32-2A730824AA65}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Faces/Age Label/{0E1932AF-D5E0-4469-8CF1-5CD2E695F649}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Faces/Gender Label/{47543212-0682-46A1-A05D-95EC0B442C43}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/People/{2FAB300F-37EC-4661-8759-B3AAF4F8D132}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/People/People Heading/{BB2227E0-2BF5-4DA7-BBC6-DB1F8F2EC966}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Tags/{0B80A490-5182-4392-8C18-F4F5D040D456}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Tags/Tags Heading/{61472E9D-6D42-47A2-BF57-44180FBD46B4}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Words/{68938384-563D-4376-A7E6-AADF9D05CC09}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Words/Bounding Box Label/{9B2D24C9-144D-4EA7-A4E1-CA15E96901F3}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Intelligent Media Dictionary/Vision/Words/Text Label/{7E3CDFB8-9FEA-465F-A6B2-BAD697AC4B06}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Person Groups/{F37CE28E-F7ED-4878-AF3C-6AF06CA7C15A}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/setup sample image/{ADD6D028-AEB2-46DE-ACA0-972DCB83422F}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>system items</Name>
+    </xitems>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

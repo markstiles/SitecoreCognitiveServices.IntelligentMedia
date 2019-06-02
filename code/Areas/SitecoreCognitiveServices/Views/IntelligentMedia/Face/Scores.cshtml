@@ -1,0 +1,41 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.Face.Scores
+
+@if (Model != null)
+{
+    <div class="scores">
+        <div class="bg-layer"></div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.AngerLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Anger)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.ContemptLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Contempt)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.DisgustLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Disgust)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.FearLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Fear)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.HappinessLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Happiness)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.NeutralLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Neutral)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.SadnessLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Sadness)
+        </div>
+        <div class="score-set">
+            <label>@Translator.Text("Face.Scores.SurpriseLabel"): </label>
+            @Html.Partial("Common/MeasureBar", Model.Surprise)
+        </div>
+    </div>
+}

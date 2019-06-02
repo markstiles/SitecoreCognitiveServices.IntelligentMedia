@@ -1,0 +1,38 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.ComputerVision.Category[]
+
+@if (Model != null)
+{
+    <div class="detail-box detail-categories">
+        <h3>@Translator.Text("Vision.Categories.CategoriesHeading")</h3>
+        <div class="detail-row">
+            @foreach (var c in Model)
+            {
+                if(c.Detail != null){
+                    <div>
+                        <div class="detail-categories-name">@c.Name.ToString().Replace("_", " "): </div>
+                        @if(c.Detail.Landmarks != null) { 
+                            foreach (var l in c.Detail.Landmarks)
+                            {
+                                <div>
+                                    <label>@l.Name</label>
+                                    @Html.Partial("Common/MeasureBar", (float) l.Confidence)
+                                </div>
+                            }
+                        }
+                        @if (c.Detail.Celebrities != null)
+                        {
+                            foreach (var celeb in c.Detail.Celebrities)
+                            {
+                                <div>
+                                    <label>@celeb.Name</label>
+                                    @Html.Partial("Common/MeasureBar", (float) celeb.Confidence)
+                                </div>
+                            }
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+}

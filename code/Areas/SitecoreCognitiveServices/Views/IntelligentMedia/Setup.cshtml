@@ -1,0 +1,88 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCognitiveServices.Models.Setup.ISetupInformation
+
+@{
+    ViewBag.Title = Translator.Text("Setup.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame editor-tab">
+    @if (Model != null)
+    {
+        <h2>@Translator.Text("Setup.FormHeading")</h2>
+        <form class="form setup-form" method="post" action="/SitecoreCognitiveServices/IntelligentMedia/SetupSubmit"
+              reindex-action="/SitecoreCognitiveServices/IntelligentMedia/ReindexSubmit">
+            <div class="form-scrollable">
+                <fieldset>
+                    <div class="form-row">
+                        <p>@Translator.Text("Setup.Description")</p>
+                    </div>
+                    <div class="form-row">
+                        <p>@Html.Raw(Translator.Text("Setup.AzureLink").Replace("{0}", "<a href=\"https://portal.azure.com/#blade/Microsoft_Azure_Marketplace/GalleryFeaturedMenuItemBlade/selectedMenuItemId/CognitiveServices_MP/resetMenuId/\" target=\"_blank\">Azure Portal</a>"))</p>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="result-success">
+                        @Translator.Text("Setup.SuccessMessage")
+                    </div>
+                    <div class="result-failure">
+                        @Html.Raw(Translator.Text("Setup.FailureMessage").Replace("{0}", "<span class=\"item-list\"></span>"))
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>@Translator.Text("Setup.IndexTypeLabel")</legend>
+                    <div class="form-row">
+                        <div>
+                            <input type="radio" id="indexOption-skip" name="indexOption" value="Skip" checked="checked" />
+                            <label for="indexOption-skip">Skip</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="indexOption-lucene" name="indexOption" value="Lucene" />
+                            <label for="indexOption-lucene">Lucene</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="indexOption-solr" name="indexOption" value="Solr" />
+                            <label for="indexOption-solr">Solr</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="indexOption-coveo" name="indexOption" value="Coveo" />
+                            <label for="indexOption-coveo">Coveo</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>@Translator.Text("Setup.FaceApiLabel")</legend>
+                    <div class="form-row">
+                        <input type="text" id="faceApi" name="faceApi" value="@Model.FaceApiKey" />
+                    </div>
+                    <legend>@Translator.Text("Setup.FaceApiEndpointLabel")</legend>
+                    <div class="form-row">
+                        <input type="text" id="faceApiEndpoint" name="faceApiEndpoint" value="@Model.FaceApiEndpoint" />
+                    </div>
+                    <legend>@Translator.Text("Setup.ComputerVisionApiLabel")</legend>
+                    <div class="form-row">
+                        <input type="text" id="computerVisionApi" name="computerVisionApi" value="@Model.ComputerVisionApiKey" />
+                    </div>
+                    <legend>@Translator.Text("Setup.ComputerVisionApiEndpointLabel")</legend>
+                    <div class="form-row">
+                        <input type="text" id="computerVisionApiEndpoint" name="computerVisionApiEndpoint" value="@Model.ComputerVisionApiEndpoint" />
+                    </div>
+                </fieldset>
+            </div>
+            <div class="scWizardButtons">
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("Setup.ButtonText")</button>
+                <button class="reindex-form-submit scButton scButtonPrimary">@Translator.Text("Setup.ReindexButtonText")</button>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-bg"></div>
+                <div class="progress-image">
+                    <img src="/sitecore/shell/themes/standard/Images/ProgressIndicator/sc-spinner32.gif" />
+                </div>
+            </div>
+        </form>
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.Setup.js"></script>

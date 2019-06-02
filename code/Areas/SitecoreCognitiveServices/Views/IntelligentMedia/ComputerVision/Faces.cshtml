@@ -1,0 +1,25 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.ComputerVision.SimpleFace[]
+
+@if (Model != null)
+{
+    foreach (var f in Model)
+    {
+        <div class="face-block">
+            @Html.Partial("ComputerVision/FaceRectangle", f.FaceRectangle)
+            <div class="face-wrap" style="top:@{@f.FaceRectangle.Top}px;left:@{@(f.FaceRectangle.Left + f.FaceRectangle.Width + 15)}px">
+                <div class="faces">
+                    <div class="bg-layer"></div>
+                    <div class="face-set">
+                        <label>@Translator.Text("Vision.Faces.AgeLabel"): </label>
+                        <span>@f.Age</span>
+                    </div>
+                    <div class="face-set">
+                        <label>@Translator.Text("Vision.Faces.GenderLabel"): </label>
+                        <span>@f.Gender</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

@@ -1,0 +1,14 @@
+﻿---
+ID: "5438b505-b647-4f6f-b40a-441d7491449d"
+Parent: "8de01e53-9b77-456e-ac39-e5a4104da38c"
+Template: "af92064f-c6b7-43e4-b10c-c0eb02bebab5"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Face Lists
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180614T154224Z

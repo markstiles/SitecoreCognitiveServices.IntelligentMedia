@@ -1,0 +1,37 @@
+﻿---
+ID: "07d335f9-3c05-41f2-934b-c5fc8866f98a"
+Parent: "715d655a-5f9d-41ad-b4d0-6b1a79a51eb9"
+Template: "715d655a-5f9d-41ad-b4d0-6b1a79a51eb9"
+Path: /sitecore/templates/Sitecore Cognitive Services/Features/Intelligent Media/Intelligent Media Settings/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {70130296-969D-44B3-B370-BCA46924D2B5}
+    {4A5DFD9F-EC4D-47CC-B8C6-BAC6A8A1E597}
+    {AF92064F-C6B7-43E4-B10C-C0EB02BEBAB5}
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: "{5FF670F0-0170-480A-90F9-7EE75FB8A834}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171108T215657Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "99b4cb00-a21a-43cb-a6fb-c17c11567f82"
+      Hint: Analyze New Images
+      Type: Checkbox
+      Value: 1
+    - ID: "af436ae1-5fd0-47e2-938d-3e3085ab815d"
+      Hint: Tag And Description Confidence Threshold
+      Value: 0.6

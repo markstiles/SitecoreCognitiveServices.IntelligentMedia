@@ -1,0 +1,14 @@
+﻿---
+ID: "f37ce28e-f7ed-4878-af3c-6af06ca7c15a"
+Parent: "8de01e53-9b77-456e-ac39-e5a4104da38c"
+Template: "4a5dfd9f-ec4d-47cc-b8c6-bac6a8a1e597"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Person Groups
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T205543Z

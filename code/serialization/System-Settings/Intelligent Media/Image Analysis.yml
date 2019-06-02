@@ -1,0 +1,23 @@
+﻿---
+ID: "dca68a11-8670-4b60-b752-f95cbbc14e97"
+Parent: "8de01e53-9b77-456e-ac39-e5a4104da38c"
+Template: "70130296-969d-44b3-b370-bca46924d2b5"
+Path: /sitecore/system/Modules/Sitecore Cognitive Services/Intelligent Media/Image Analysis
+DB: master
+SharedFields:
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: "{59F53BBB-D1F5-4E38-8EBA-0D73109BB59B}"
+- ID: "d312103c-b36c-4ca5-864a-c85f9abda503"
+  Hint: __Is Bucket
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171108T215152Z

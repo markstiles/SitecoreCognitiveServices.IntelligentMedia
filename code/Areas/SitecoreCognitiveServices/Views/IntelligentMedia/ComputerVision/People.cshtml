@@ -1,0 +1,16 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model string[]
+
+
+<div class="detail-box">
+    <h3>@Translator.Text("Vision.People.PeopleHeading")</h3>
+    <div class="detail-row">
+        @if (Model != null)
+        {
+            foreach (var s in Model)
+                {
+                    <div>@s</div>
+                }
+        }
+    </div>
+</div>

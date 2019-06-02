@@ -1,0 +1,55 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Foundation.MSSDK.Vision.Models.Face.FaceAttributes
+
+@if (Model != null)
+{
+    <div class="attributes">
+        <div class="bg-layer"></div>
+        <div class="attr-set">
+            <label>@Translator.Text("Face.Attributes.AgeLabel"): </label>
+            <span>@Model.Age.ToString("0")</span>
+        </div>
+        <div class="attr-set">
+            <label>@Translator.Text("Face.Attributes.GenderLabel"): </label>
+            <span>@Model.Gender</span>
+        </div>
+        <div class="attr-set">
+            <label>@Translator.Text("Face.Attributes.GlassesLabel"): </label>
+            <span>@Model.Glasses</span>
+        </div>
+        <div class="attr-set">
+            <label>@Translator.Text("Face.Attributes.AngerLabel"): </label>
+            @Html.Partial("Common/MeasureBar", (float)Model.Smile)
+        </div>
+        <div class="bar-list">
+            <h4>@Translator.Text("Face.Attributes.FacialHairHeading")</h4>
+            <div class="attr-set">
+                <label>@Translator.Text("Face.Attributes.BeardLabel")</label>
+                @Html.Partial("Common/MeasureBar", (float)Model.FacialHair.Beard)
+            </div>
+            <div class="attr-set">
+                <label>@Translator.Text("Face.Attributes.AngerLabel")</label>
+                @Html.Partial("Common/MeasureBar", (float)Model.FacialHair.Moustache)
+            </div>
+            <div class="attr-set">
+                <label>@Translator.Text("Face.Attributes.SideburnsLabel")</label>
+                @Html.Partial("Common/MeasureBar", (float)Model.FacialHair.Sideburns)
+            </div>
+        </div>
+        <div class="bar-list">
+            <h4>@Translator.Text("Face.Attributes.HeadPoseHeading")</h4>
+            <div class="attr-set">
+                <label>@Translator.Text("Face.Attributes.PitchLabel")</label>
+                @Html.Partial("Common/MeasureBar", (float)Model.HeadPose.Pitch)
+            </div>
+            <div class="attr-set">
+                <label>@Translator.Text("Face.Attributes.RollLabel")</label>
+                @Html.Partial("Common/MeasureBar", (float)Model.HeadPose.Roll)
+            </div>
+            <div class="attr-set">
+                <label>@Translator.Text("Face.Attributes.YawLabel")</label>
+                @Html.Partial("Common/MeasureBar", (float)Model.HeadPose.Yaw)
+            </div>
+        </div>
+    </div>
+}

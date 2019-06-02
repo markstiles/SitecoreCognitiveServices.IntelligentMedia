@@ -1,0 +1,28 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model string
+
+@{
+    ViewBag.Title = Translator.Text("IdentifyAllGroups.Title");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    <form class="form identify-all-groups-form" method="post"
+          status="/SitecoreCognitiveServices/IntelligentMedia/GetJobStatus">
+        <fieldset>
+            @Html.Partial("_ContextFields")
+            <input type="hidden" name="handleName" id="handleName" value="@Model" />
+        </fieldset>
+    </form>
+    @Html.Partial("_ProgressIndicator")
+    <div class="result-waiting">
+        @Translator.Text("IdentifyAllGroups.WaitingMessage")
+    </div>
+    <div class="result-display">
+        @Html.Raw(Translator.Text("IdentifyAllGroups.ResultMessage").Replace("{0}", "<span class=\"result-count\"></span>"))
+    </div>
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.IdentifyAllGroups.js"></script>

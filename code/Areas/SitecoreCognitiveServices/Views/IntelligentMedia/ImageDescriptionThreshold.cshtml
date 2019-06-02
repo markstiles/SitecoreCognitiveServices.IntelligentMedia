@@ -1,0 +1,46 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCognitiveServices.Models.Utility.ISetAltTagsAll
+
+@{
+    ViewBag.Title = Translator.Text("ImageDescriptionThreshold.ViewTitle");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+        <form class="form set-alt-all-form" method="post" action="/SitecoreCognitiveServices/IntelligentMedia/UpdateImageDescriptionAll">
+            <fieldset>
+                <legend>@Translator.Text("ImageDescriptionThreshold.UpdateAltLabel")</legend>
+                <div class="form-row">
+                    <p>@Translator.Text("ImageDescriptionThreshold.UpdateAltDescription")</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>@Translator.Text("ImageDescriptionThreshold.ConfidenceLabel")</legend>
+                <div class="form-row">
+                    <input class="threshold-range" type="range" min="0" max="100" id="threshold" name="threshold" oninput="thresholdOutput.value = threshold.value" />
+                    <output class="threshold-range-output" name="thresholdOutput" id="thresholdOutput">50</output>
+                </div>
+                <legend>@Translator.Text("ImageDescriptionThreshold.OverwriteLabel")</legend>
+                <div class="form-row">
+                    <input class="overwrite-value" type="checkbox" id="overwrite" name="overwrite" />
+                </div>
+                <div>
+                    @Html.Partial("_ContextFields")
+                </div>
+            </fieldset>
+            <div class="scWizardButtons">
+                <button class="form-submit scButton scButtonPrimary">@Translator.Text("ImageDescriptionThreshold.ButtonText")</button>
+            </div>
+        </form>
+        @Html.Partial("_ProgressIndicator")
+        <div class="result-display">
+            @Html.Raw(Translator.Text("ImageDescriptionThreshold.ResultMessage").Replace("{0}", "<span class=\"result-modified\">" + Model.ItemsModified + "</span>").Replace("{1}", "<span class=\"result-count\">" + Model.ItemCount + "</span>"))
+        </div>
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.ImageDescriptionThreshold.js"></script>

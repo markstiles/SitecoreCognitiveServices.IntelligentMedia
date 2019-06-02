@@ -1,0 +1,61 @@
+﻿@using SitecoreCognitiveServices.Feature.IntelligentMedia.Statics
+@model SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCognitiveServices.Models.Utility.ISmartCrop
+
+@{
+    ViewBag.Title = Translator.Text("SmartCrop.Title");
+    Layout = "~/Areas/SitecoreCognitiveServices/Views/Common/CognitiveLayout.cshtml";
+}
+
+<link rel="stylesheet" href="/Areas/SitecoreCognitiveServices/Assets/css/SitecoreCognitiveServices.Feature.IntelligentMedia.css?x=@(new System.Random().Next())" />
+
+<div class="frame">
+    @if (Model != null)
+    {
+    <form class="form smart-crop-form" method="post"
+          crop-action="/SitecoreCognitiveServices/IntelligentMedia/SmartCropSubmit"
+          save-action="/SitecoreCognitiveServices/IntelligentMedia/SmartCropSave">
+        <div class="form-row">
+            <p>@Translator.Text("SmartCrop.Description")</p>
+        </div>
+        <div class="result-success">
+            @Translator.Text("SmartCrop.SuccessMessage")
+        </div>
+        <div class="result-failure crop-failure">
+            @Html.Raw(Translator.Text("SmartCrop.FailureCropMessage"))
+            <ul class="error-messages"></ul>
+        </div>
+        <div class="result-failure save-failure">
+            @Html.Raw(Translator.Text("SmartCrop.FailureSaveMessage"))
+        </div>
+        <div class="crop-preview"></div>
+        <fieldset class="form-fields">
+            <div class="form-row">
+                <input type="checkbox" id="preserveAspectRatio" name="preserveAspectRatio" />
+                <label for="preserveAspectRatio">@Translator.Text("SmartCrop.PreserveAspectRatio")</label>
+            </div>
+            <label for="width">@Translator.Text("SmartCrop.Width")</label>
+            <div class="form-row">
+                <input type="text" id="width" name="width" data-original="@Model.Width" value="@Model.Width" />
+            </div>
+            <label for="height">@Translator.Text("SmartCrop.Height")</label>
+            <div class="form-row">
+                <input type="text" id="height" name="height" data-original="@Model.Height" value="@Model.Height" />
+            </div>
+            <div>
+                @Html.Partial("_ContextFields")
+                <input type="hidden" name="fileName" id="fileName" value="" />
+                <input type="hidden" name="aspectRatio" id="aspectRatio" value="@Model.AspectRatio" />
+            </div>
+        </fieldset>
+        <div class="scWizardButtons">
+            <button class="reset-form-submit scButton scButtonPrimary">@Translator.Text("SmartCrop.ResetButton")</button>
+            <button class="crop-form-back scButton scButtonPrimary">@Translator.Text("SmartCrop.BackButton")</button>
+            <button class="crop-form-submit scButton scButtonPrimary">@Translator.Text("SmartCrop.CropButton")</button>
+            <button class="save-form-submit scButton scButtonPrimary">@Translator.Text("SmartCrop.SaveButton")</button>
+        </div>
+        @Html.Partial("_ProgressIndicator")
+    </form>
+    }
+</div>
+
+<script src="/Areas/SitecoreCognitiveServices/Assets/js/SitecoreCognitiveServices.Feature.IntelligentMedia.SmartCrop.js"></script>
