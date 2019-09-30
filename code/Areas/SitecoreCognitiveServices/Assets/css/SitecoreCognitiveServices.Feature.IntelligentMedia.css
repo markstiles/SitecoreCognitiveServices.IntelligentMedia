@@ -284,7 +284,7 @@ fieldset a:hover { text-decoration: none; }
 
 .smart-crop-form .progress-indicator { top: 174px; }
 .crop-preview { position: absolute; height: 300px; width: 630px; z-index: -1; top: 36px; }
-.crop-preview img { max-height: 290px; max-width: 628px; position: absolute; top: 0; bottom: 0; right: 0; margin: auto; left: 0; }
+.crop-preview img { border:1px solid #333; max-height: 290px; max-width: 628px; position: absolute; top: 0; bottom: 0; right: 0; margin: auto; left: 0; }
 .crop-failure ul { list-style-type: disc; margin: 10px 0 0 15px; }
 .crop-failure li { line-height: 20px; }
 

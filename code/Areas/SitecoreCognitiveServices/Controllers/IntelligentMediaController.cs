@@ -463,7 +463,7 @@ namespace SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCogni
 
             MediaItem m = DataWrapper.GetItemByIdValue(id, db);
 
-            var validationErrors = ComputerVisionService.ValidateVisionImage(m);
+            var validationErrors = ComputerVisionService.ValidateVisionImage(m, height, width);
             if (validationErrors.Any())
                 return Json(new
                 {
@@ -481,7 +481,7 @@ namespace SitecoreCognitiveServices.Feature.IntelligentMedia.Areas.SitecoreCogni
             {
                 Failed = !succeeded,
                 FileName = fileName,
-                Messages = new string[0]
+                Messages = new string[] { "Thumbnail size is not in allowed range." }
             });
         }
         
